@@ -1,8 +1,13 @@
 {
   "App": {
     "port": "8080",
+    "apiUrl": "http://localhost:8080",
     "database": {
-      "url": "mongodb+srv://teste:123@teste.uwxgz.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
+      "url": ""
+    },
+    "auth": {
+      "privateKey": "some-token",
+      "expiresIn": "3600"
     }
   }
 }
