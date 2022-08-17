@@ -7,6 +7,5 @@ export const connect = async (): Promise<Mongoose> => {
   return await mongoose.connect(databaseConfig.get('url'))
 }
 
-mongoose.connection.on('connected', () => {
-  console.log('Connected to the database!')
-})
+mongoose.connection.on('error', () => console.log('Database error!'))
+mongoose.connection.once('open', () => console.log('Connected to the database!'))

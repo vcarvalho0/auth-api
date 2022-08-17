@@ -3,7 +3,7 @@
     "port": "8080",
     "apiUrl": "http://localhost:8080",
     "database": {
-      "url": ""
+      "url": "mongodb://auth:123@localhost:27017"
     },
     "auth": {
       "privateKey": "some-token",
